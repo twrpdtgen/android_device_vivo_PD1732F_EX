@@ -23,8 +23,8 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 TARGET_USES_64_BIT_BINDER := true
 
 # These two are for MTK Chipsets only
-BOARD_USES_MTK_HARDWARE := true
-BOARD_HAS_MTK_HARDWARE := true
+#BOARD_USES_MTK_HARDWARE := true
+#BOARD_HAS_MTK_HARDWARE := true
 
 
 # Bootloader
