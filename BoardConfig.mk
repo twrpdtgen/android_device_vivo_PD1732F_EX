@@ -35,7 +35,6 @@ TARGET_BOOTLOADER_BOARD_NAME := Y81
 TARGET_SCREEN_DENSITY := 320
 
 # Kernel
-TARGET_KERNEL_ARCH := arm64
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 product.version=PD1732F_EX_A_2.70.8 fingerprint.abbr=8.1.0/O11019 androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 2048
@@ -68,9 +67,6 @@ TARGET_NO_BOOTLOADER := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
-# Security patch level
-VENDOR_SECURITY_PATCH := 2021-08-01
-
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := 2099-12-31
@@ -86,10 +82,6 @@ TW_USE_TOOLBOX := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/musb-hdrc.0.auto/gadget/lun%d/file
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_SUPPRESS_SECURE_ERASE := true
-BOARD_USE_FRAMEBUFFER_ALPHA_CHANNEL := true
-RECOVERY_GRAPHICS_USE_LINELENGTH := true
-TARGET_DISABLE_TRIPLE_BUFFERING := false
-TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness\"
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/etc/recovery.fstab
 
 # system.prop
