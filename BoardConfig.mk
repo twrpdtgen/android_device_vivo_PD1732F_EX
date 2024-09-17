@@ -24,8 +24,6 @@ TARGET_USES_64_BIT_BINDER := true
 
 # These two are for MTK Chipsets only
 BOARD_USES_MTK_HARDWARE := true
-BOARD_HAS_MTK_HARDWARE := true
-
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := Y81
@@ -74,7 +72,7 @@ PLATFORM_VERSION := 16.1.0
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
-TW_EXTRA_LANGUAGES := true
+TW_EXTRA_LANGUAGES := false
 TW_DEFAULT_LANGUAGE := ru
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
@@ -82,7 +80,7 @@ TW_USE_TOOLBOX := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/musb-hdrc.0.auto/gadget/lun%d/file
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_SUPPRESS_SECURE_ERASE := true
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/etc/recovery.fstab
+#TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/etc/recovery.fstab
 
 # system.prop
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
@@ -95,9 +93,6 @@ DEVICE_SCREEN_HEIGHT := 1520
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_NO_SCREEN_BLANK := true
 TW_NO_SCREEN_TIMEOUT := true
-
-# Excludes
-TW_EXCLUDE_TWRPAPP := true
 
 # Debug
 TWRP_INCLUDE_LOGCAT := true
