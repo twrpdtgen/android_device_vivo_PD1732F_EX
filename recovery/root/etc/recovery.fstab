@@ -11,17 +11,17 @@
 # Core Partitions
 /dev/block/platform/bootdevice/by-name/userdata  /data       ext4  noatime,nosuid,nodev,noauto_da_alloc,discard,errors=panic     wait,check,quota,formattable,resize,forceencrypt=/dev/block/platform/bootdevice/by-name/metadata
 /dev/block/platform/bootdevice/by-name/cache     /cache                 ext4  noatime,nosuid,nodev,noauto_da_alloc,discard                  wait,check,formattable
-/dev/block/platform/bootdevice/by-name/persist    /persist             ext4   noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc       wait,check,formattable
+/dev/block/platform/bootdevice/by-name/persist    /vendor/persist       ext4   noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc       wait,check,formattable
 /dev/block/platform/bootdevice/by-name/boot       /boot                 emmc      defaults                                                       defaults
 /dev/block/platform/bootdevice/by-name/recovery   /recovery             emmc      defaults                                                  defaults
 
 # Subscriber Identification Module (SIM)
-/dev/block/platform/bootdevice/by-name/protect1  /protect_f            ext4   noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc          wait,check,formattable
-/dev/block/platform/bootdevice/by-name/protect2  /protect_s            ext4   noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc             wait,check,formattable
+/dev/block/platform/bootdevice/by-name/protect1  /vendor/protect_f            ext4   noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc          wait,check,formattable
+/dev/block/platform/bootdevice/by-name/protect2  /vendor/protect_s            ext4   noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc             wait,check,formattable
 
 # Non-Volatile (RAM | DATA | CFG)
-/dev/block/platform/bootdevice/by-name/nvdata    /nvdata               ext4   noatime,nosuid,nodev,noauto_da_alloc,discard                wait,check,formattable
-/dev/block/platform/bootdevice/by-name/nvcfg      /nvcfg               ext4   noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc        wait,check,formattable
+/dev/block/platform/bootdevice/by-name/nvdata    /vendor/nvdata               ext4   noatime,nosuid,nodev,noauto_da_alloc,discard                wait,check,formattable
+/dev/block/platform/bootdevice/by-name/nvcfg      /vendor/nvcfg               ext4   noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc        wait,check,formattable
 
 # Bootloader Partitions
 /dev/block/platform/bootdevice/by-name/lk         /bootloader           emmc        defaults                                                       defaults
