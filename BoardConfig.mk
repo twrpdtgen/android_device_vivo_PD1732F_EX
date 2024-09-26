@@ -87,7 +87,7 @@ TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,noauto_da_alloc,barrier=0,
 TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := false
 TW_DEFAULT_LANGUAGE := ru
-TW_SCREEN_BLANK_ON_BOOT := true
+TW_SCREEN_BLANK_ON := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/musb-hdrc.0.auto/gadget/lun%d/file
